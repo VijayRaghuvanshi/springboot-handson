@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: reactive springboot demo application
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+    datasource:
+      driver-class-name: org.h2.Driver
+  sql:
+    init:
+      mode: always
+logging:
+  level:
+    root: DEBUG
+    com.demo.reactive: DEBUG
+
+
